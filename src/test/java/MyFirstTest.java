@@ -8,14 +8,15 @@ import static org.junit.Assert.*;
 public class MyFirstTest {
 
     @Test
-    public void test1() {
+    public void isCodeupCodeUp() {
+        String correct = "Codeup";
+        String common = "CodeUp";
 
-        assertEquals("Codeup", "CodeUp");
-
+        assertNotEquals(correct, common);
     }
 
     @Test
-    public void test2() {
+    public void listsAreDifferent() {
         List<String> languages = new ArrayList<>();
         List<String> moreLanguages = new ArrayList<>();
 
@@ -23,7 +24,7 @@ public class MyFirstTest {
     }
 
     @Test
-    public void test3(){
+    public void arraysAreEqual(){
         int[] numbers = {1, 2, 3};
         int[] otherNumbers = new int[3];
         otherNumbers[0] = 1;
@@ -34,7 +35,7 @@ public class MyFirstTest {
     }
 
     @Test
-    public void test4() {
+    public void stringContains() {
         String language = "PHP";
 
 
